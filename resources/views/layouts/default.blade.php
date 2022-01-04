@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Weibo App') - Laravel 入门教程</title>
+    <title>@yield('title', 'Weibo App') - Laravel 入門教程</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   </head>
 
@@ -15,6 +15,8 @@
         @include('layouts._footer')
       </div>
     </div>
+
+    <script src="{{ mix('js/app.js') }}"></script>
   </body>
 </html>
 
