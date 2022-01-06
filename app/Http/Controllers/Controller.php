@@ -9,5 +9,12 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
+    public function __construct()
+    {
+        $this->middleware('auth', [
+            'except' =>['show', 'create', 'store']
+        ]);
+    }
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
